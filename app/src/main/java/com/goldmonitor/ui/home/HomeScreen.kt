@@ -208,6 +208,7 @@ fun PriceDetailItem(label: String, value: String) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TimeRangeSelector(
     selected: TimeRange,

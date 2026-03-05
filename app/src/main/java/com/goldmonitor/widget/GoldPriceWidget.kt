@@ -2,7 +2,6 @@ package com.goldmonitor.widget
 
 import android.content.Context
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.glance.*
@@ -16,6 +15,7 @@ import androidx.glance.layout.*
 import androidx.glance.text.FontWeight
 import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
+import androidx.glance.unit.ColorProvider
 import com.goldmonitor.MainActivity
 import com.goldmonitor.data.local.GoldPriceDatabase
 import com.goldmonitor.domain.model.PriceDirection
@@ -64,15 +64,15 @@ fun GoldPriceWidgetContent(
     direction: PriceDirection
 ) {
     val priceColor = when (direction) {
-        PriceDirection.UP -> Color(0xFFE53935)
-        PriceDirection.DOWN -> Color(0xFF43A047)
-        PriceDirection.FLAT -> Color(0xFF9E9E9E)
+        PriceDirection.UP -> androidx.compose.ui.graphics.Color(0xFFE53935)
+        PriceDirection.DOWN -> androidx.compose.ui.graphics.Color(0xFF43A047)
+        PriceDirection.FLAT -> androidx.compose.ui.graphics.Color(0xFF9E9E9E)
     }
 
     Box(
         modifier = GlanceModifier
             .fillMaxSize()
-            .background(Color(0xFFF5F5F5))
+            .background(androidx.compose.ui.graphics.Color(0xFFF5F5F5))
             .cornerRadius(16.dp)
             .clickable(actionStartActivity<MainActivity>())
             .padding(12.dp),
@@ -86,7 +86,7 @@ fun GoldPriceWidgetContent(
                 text = "黄金 AU9999",
                 style = TextStyle(
                     fontSize = 12.sp,
-                    color = ColorProvider(Color(0xFF757575))
+                    color = ColorProvider(androidx.compose.ui.graphics.Color(0xFF757575))
                 )
             )
             
@@ -97,7 +97,7 @@ fun GoldPriceWidgetContent(
                 style = TextStyle(
                     fontSize = 24.sp,
                     fontWeight = FontWeight.Bold,
-                    color = ColorProvider(Color(0xFFFFD700))
+                    color = ColorProvider(androidx.compose.ui.graphics.Color(0xFFFFD700))
                 )
             )
             

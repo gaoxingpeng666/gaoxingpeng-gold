@@ -107,6 +107,7 @@ fun EmptyRulesContent(modifier: Modifier = Modifier) {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AlertRuleCard(
     rule: AlertRule,
