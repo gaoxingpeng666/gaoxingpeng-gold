@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors - Gold Theme -->
+    <color name="gold_primary">#FFD700</color>
+    <color name="gold_primary_dark">#DAA520</color>
+    <color name="gold_primary_light">#FFE55C</color>
+    
+    <!-- Secondary Colors -->
+    <color name="secondary">#1E3A5F</color>
+    <color name="secondary_variant">#2E4A6F</color>
+    
+    <!-- Price Colors -->
+    <color name="price_up">#E53935</color>
+    <color name="price_down">#43A047</color>
+    <color name="price_flat">#9E9E9E</color>
+    
+    <!-- Background -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#1E1E1E</color>
+    
+    <!-- Text -->
+    <color name="text_primary_light">#212121</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_light">#757575</color>
+    <color name="text_secondary_dark">#B0B0B0</color>
+    
+    <!-- Notification -->
+    <color name="notification_accent">#FFD700</color>
+</resources>
